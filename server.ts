@@ -1,4 +1,4 @@
-const { ApolloServer } = require('apollo-server');
+const { ApolloServer } = require('apollo-server'); // require vs import? 
 const data = require('./data/books.ts');
 const resolvers = require('./resolvers.ts');
 const typeDefs = require('./schema.ts'); // why can it not be named typeDefs in the other file? 
