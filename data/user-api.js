@@ -7,7 +7,8 @@ class UserAPI extends RESTDataSource {
   }
 
   getUsers() {
-    return this.getUsers('users');
+    return this.get('users');
   }
-
 }
+
+module.exports = UserAPI;

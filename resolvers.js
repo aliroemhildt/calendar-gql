@@ -1,6 +1,8 @@
 const resolvers = {
   Query: {
-    books: () => books,
+    users: (_, __, { dataSources }) => {
+      return dataSources.userAPI.getUsers();
+    }
   }
 }
 
