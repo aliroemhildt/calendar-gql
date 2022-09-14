@@ -3,10 +3,10 @@ const { RESTDataSource } = require('apollo-datasource-rest');
 class UserAPI extends RESTDataSource {
   constructor() {
     super();
-    this.baseURL = 'https://localhost:3000/api/';
+    this.baseURL = 'http://localhost:3000/api/';
   }
 
-  getUsers() {
+  async getUsers() {
     return this.get('users');
   }
 }
