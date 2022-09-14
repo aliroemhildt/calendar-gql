@@ -6,9 +6,13 @@ class UserAPI extends RESTDataSource {
     this.baseURL = 'http://localhost:3000/api/';
   }
 
-  async getUsers() {
+  getUsers() {
     return this.get('users');
   }
+
+  getSingleUser(id) {
+    return this.get(`users/${id}`);
+  }  
 }
 
 module.exports = UserAPI;
