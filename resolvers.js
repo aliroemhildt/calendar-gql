@@ -1,18 +1,12 @@
 const resolvers = {
   Query: {
-    users: (_, __, { dataSources }) => {
+    users: (_parent, __args, { dataSources }) => {
       return dataSources.userAPI.getUsers();
     },
 
-    user: (_, { id }, { dataSources }) => {
+    user: (_parent, { id }, { dataSources }) => {
       return dataSources.userAPI.getSingleUser(id);
     },
-
-    test: (_, name, __) => {
-      console.log(name);
-      return { name };
-    }
-
   }
 }
 

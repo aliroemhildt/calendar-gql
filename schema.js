@@ -5,7 +5,6 @@ const types = gql`
   type Query {
       users: [User!]
       user(id: ID!): User!
-      test(name: String): Test
     }
 
   type User {
@@ -15,10 +14,6 @@ const types = gql`
     username: String
     password: String
     # dateCreated: Date
-  }
-
-  type Test {
-    name: String
   }
 `;
 
