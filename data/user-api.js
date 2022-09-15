@@ -11,6 +11,7 @@ class UserAPI extends RESTDataSource {
   }
 
   getSingleUser(id) {
+    console.log(id)
     return this.get(`users/${id}`);
   }  
 }

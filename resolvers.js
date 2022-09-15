@@ -4,9 +4,15 @@ const resolvers = {
       return dataSources.userAPI.getUsers();
     },
 
-    user: ({ id }, _, { dataSources }) => {
+    user: (_, { id }, { dataSources }) => {
       return dataSources.userAPI.getSingleUser(id);
+    },
+
+    test: (_, name, __) => {
+      console.log(name);
+      return { name };
     }
+
   }
 }
 
