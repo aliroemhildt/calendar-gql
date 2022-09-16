@@ -13,7 +13,44 @@ class UserAPI extends RESTDataSource {
   getSingleUser(id) {
     console.log(id)
     return this.get(`users/${id}`);
-  }  
+  }
+
+  postUser() {
+
+  }
+
+  updateUser() {
+
+  }
+
+  deleteUser() {
+
+  }
+
+  getEvents() {
+
+  }
+
+  getSingleEvent() {
+
+  }
+
+  getEventsByUser() {
+
+  }
+
+  postEvent() {
+
+  }
+
+  updateEvent() {
+
+  }
+
+  deleteEvent() {
+    
+  }
+
 }
 
 module.exports = UserAPI;

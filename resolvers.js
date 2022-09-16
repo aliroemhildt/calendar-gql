@@ -7,6 +7,8 @@ const resolvers = {
     user: (_parent, { id }, { dataSources }) => {
       return dataSources.userAPI.getSingleUser(id);
     },
+
+    
   }
 }
 
